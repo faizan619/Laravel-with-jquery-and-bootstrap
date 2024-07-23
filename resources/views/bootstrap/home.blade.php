@@ -20,13 +20,20 @@
             border: 1px solid darkgreen;
         }
 
-        .col-3 {
+        .col-md-3 {
             border: 1px solid red;
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-3">this is me</div>
+            <div class="col-md-3">me is this</div>
+            <div class="col-md-3">me is me</div>
+        </div>
+    </div>
     <div class="container">
         {{-- <div class="row">
             <div class="col-lg-6 offset-lg-3 col-2 ">first col</div>
@@ -54,6 +61,28 @@
 </html>
 
 {{-- 
+
+Vertical
+
+align-items-start           align-items-end             align-items-center         align-items-stretch(default)         align-items-baseline
+align-items-xl-start        align-items-xl-end          align-items-xl-center      align-items-xl-stretch(default)      align-items-xl-baseline
+align-items-lg-start        align-items-lg-end          align-items-lg-center      align-items-lg-stretch(default)      align-items-lg-baseline
+align-items-md-start        align-items-md-end          align-items-md-center      align-items-md-stretch(default)      align-items-md-baseline
+align-items-sm-start        align-items-sm-end          align-items-sm-center      align-items-sm-stretch(default)      align-items-sm-baseline
+
+
+align-content-start         align-content-end           align-content-center        align-content-between       align-content-around        align-content-stretch(default)
+
+Horizontal
+
+justify-content-center             justify-content-start              justify-content-end
+justify-content-xl-center          justify-content-xl-start           justify-content-xl-end
+justify-content-lg-center          justify-content-lg-start           justify-content-lg-end
+justify-content-md-center          justify-content-md-start           justify-content-md-end
+justify-content-sm-center          justify-content-sm-start           justify-content-sm-end
+
+
+
 
 paddding = 0 - 5
 p-*        pr-*        pl-*        pt-*        pb-*
