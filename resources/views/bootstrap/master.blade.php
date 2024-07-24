@@ -47,7 +47,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container ">
         @yield('body')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -57,6 +57,25 @@
 
 {{--
 
+Overflow
+overflow-auto           overflow-hidden     
+
+Position
+position.relative       position.absolute       position.static     position.fixed      position.sticky     
+fixed-top               fixed-bottom            sticky-top
+
+Width
+w-25        w-50        w-75        w-100       w-auto      mw-100      min-vw-100
+
+height
+h-25        h-50        h-75        h-100       h-auto      mh-100      min-vh-100
+
+Float
+float-xl-left      float-xl-right       float-xl-none     float-xl-clearfix      
+float-lg-left      float-lg-right       float-lg-none     float-lg-clearfix      
+float-md-left      float-md-right       float-md-none     float-md-clearfix      
+float-sm-left      float-sm-right       float-sm-none     float-sm-clearfix      
+float-left         float-right          float-none        float-clearfix      
 
 display
 d-print-none      d-print-inline        d-inline-block      d-block     d-table     d-table-cell        d-table-row     d-flex      d-inline-flex
