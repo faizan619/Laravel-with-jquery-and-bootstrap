@@ -42,6 +42,7 @@
         <div class="buttoncontainer">
             <a href="{{route('Bhome')}}"><button>Bootstrap</button></a>
             <a href="{{route('Jhome')}}"><button>JQuery</button></a>
+            <a href="{{route('vikas.create')}}"><button>Vikas Gates</button></a>
         </div>
     </div>
 </body>
