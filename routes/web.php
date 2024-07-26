@@ -17,6 +17,7 @@ Route::get('/bootstrap/4',function(){return view('bootstrap.float');})->name('fl
 Route::get('/bootstrap/5',function(){return view('bootstrap.position');})->name('position');
 Route::get('/bootstrap/6',function(){return view('bootstrap.advanceMarginPadding');})->name('advance');
 Route::get('/bootstrap/7',function(){return view('bootstrap.colorandtypograph');})->name('typo');
+Route::get('/bootstrap/8',function(){return view('bootstrap.navbar');})->name('nav');
 
 
 
