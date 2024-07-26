@@ -1,0 +1,17 @@
+.navbtnstyle:hover{
+    background-color: blue;
+    color: white;
+}
+.navbtnstyle .h{
+    padding: 0;
+    color: green;
+}
+.this{
+    height: 4rem;
+}
+.hmm{
+    width: 20rem;
+}
+/* .this2{
+    height: 2rem;
+} */

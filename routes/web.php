@@ -18,6 +18,8 @@ Route::get('/bootstrap/5',function(){return view('bootstrap.position');})->name(
 Route::get('/bootstrap/6',function(){return view('bootstrap.advanceMarginPadding');})->name('advance');
 Route::get('/bootstrap/7',function(){return view('bootstrap.colorandtypograph');})->name('typo');
 Route::get('/bootstrap/8',function(){return view('bootstrap.navbar');})->name('nav');
+// making clone app with bootstrap to understand deep content
+Route::get('/bootstrap/github-landing-page',function(){return view('bootstrap.githubLandingPageClone');})->name('githubclone');
 
 
 
