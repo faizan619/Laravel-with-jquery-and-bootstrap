@@ -125,6 +125,19 @@ justify-content-md-center          justify-content-md-start           justify-co
 justify-content-sm-center          justify-content-sm-start           justify-content-sm-end
 
 
+advance margin and padding
+padding and margin value = 0-5
+px-*    py-*    mx-*    my-*
+px-xl-*    py-*       mx-*       my-xl-*
+px-lg-*    py-lg-*    mx-lg-*    my-lg-*
+px-md-*    py-md-*    mx-md-*    my-md-*
+px-sm-*    py-sm-*    mx-sm-*    my-sm-*
+px-xl-n*    pyn*        mx-n*       my-xl-n*
+px-lg-n*    py-lg-n*    mx-lg-n*    my-lg-n*
+px-md-n*    py-md-n*    mx-md-n*    my-md-n*
+px-sm-n*    py-sm-n*    mx-sm-n*    my-sm-n*
+
+no-gutters --> it will remove the default margin and padding in the class
 
 
 paddding = 0 - 5

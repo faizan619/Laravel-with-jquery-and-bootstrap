@@ -5,15 +5,20 @@
 @endsection
 
 @section('body')
-    <div class="row">
-        <a class="col" href="{{ route('align_self') }}">Align Self tutorial</a>
+    <div class="row d-flex gap-3">
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('align_self') }}">Align Self tutorial</a>
         <br>
-        <a class="col" href="{{ route('flex_direction') }}">Flex Direction tutorial</a>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('flex_direction') }}">Flex Direction tutorial</a>
         <br>
-        <a class="col" href="{{ route('display') }}">Flex Direction tutorial</a>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('display') }}">Flex Direction tutorial</a>
         <br>
-        <a class="col" href="{{ route('float') }}">Float tutorial</a>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('float') }}">Float tutorial</a>
         <br>
-        <a class="col" href="{{ route('position') }}">Position tutorial</a>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('position') }}">Position tutorial</a>
+        <br>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('advance') }}">Advance Padding and Margin tutorial</a>
+        <br>
+        {{-- net ninja part --}}
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('typo') }}">Color and TypeGraphy</a>
     </div>
 @endsection
