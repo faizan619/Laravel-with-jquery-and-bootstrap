@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
+      <a href="#" class="navbar-brand  align-items-center gap-3 d-flex">
+        <i class="bi bi-github fs-2"></i>
+        <span class="fs-5">Github</span>
+    </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,6 +38,23 @@
       </div>
     </div>
   </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 bg-danger this">
+        <div class="bg-primary hel"></div>
+      </div>
+      <div class="col-md-4 this bg-success">
+        <div class="row gap-3 text-center">
+          <div class="col-md-5 img11 bg-danger">col1</div>
+          <div class="col-md-5 img11 bg-danger">col2</div>
+        </div>
+        <div class="row-5 img11 bg-info h-vh-5">row2</div>
+      </div>
+      <div class="col-md-4 danger-primary">-</div>
+    </div>
+  </div>
 
 {{-- <nav class="navbar this navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
