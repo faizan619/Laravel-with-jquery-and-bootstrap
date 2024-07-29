@@ -23,6 +23,10 @@
         <br>
         <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('nav') }}">Navbar</a>
         <br>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('glutter') }}">Glutter</a>
+        <br>
+        <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('grid') }}">Gird</a>
+        <br>
         <a class="col-3 p-3 rounded bg-primary text-light" href="{{ route('githubclone') }}">Github Clone</a>
     </div>
 @endsection

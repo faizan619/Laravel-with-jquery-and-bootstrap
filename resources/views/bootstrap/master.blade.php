@@ -57,6 +57,32 @@
 
 {{--
 
+object-fit-cover
+blockquote          img-fluid       img-thumbnail       table-striped-columns       table-hover      table-dark     text-truncate
+table-bordered      <tbody class="table-group-divider">                             .text-primary-emphasis
+<table class="table caption-top">
+  <caption>List of users</caption>
+
+<figure class="figure">
+  <img src="..." class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption">A caption for the above image.</figcaption>
+</figure>
+
+g-*	// for glutters
+
+row-cols-2	// it will take only two col in one line
+
+align-items-start // it is used in row like .row.align-items-start
+
+align-self-start // it is used insode row>col 
+
+justify-content-center || justify-content-around	// upper ka vertical alignment k liye and yai horizontal alignment k liye
+
+<!-- Force next columns to break to new line -->
+    <div class="w-100"></div>
+
+col-auto me-auto	// margin is used in col same as padding
+
 Overflow
 overflow-auto           overflow-hidden     
 
