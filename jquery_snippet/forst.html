@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.js"></script>
+    <title>Append and Prepend</title>
+</head>
+<body>
+    <div id="box">
+        <h1>JQuery Append & Prepend Methods</h1>
+        <button class="btn1">Append</button>
+        <button class="btn2">Prepend</button>
+        <div id="cont">
+            <h2>Test Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a placeat provident repellat voluptate minus. Amet culpa nisi repellendus laborum!</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#cont").css({'border':'1px solid red','margin-bottom':'10px'})
+            $(".btn1").click(function(){
+                $("#cont").append("<h2>Append</h2>")
+            })
+            $(".btn2").click(function(){
+                $("#cont").prepend("<h2>Prepend</h2>")
+            })
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.js"></script>
+    <title>On and Off</title>
+    <style>
+        .bgt{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery On() Method</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore enim magni veniam maxime, architecto labore a laboriosam ut doloribus culpa?</p>
+    </div>
+    <button id="btn">CLick</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#box").on({
+                "click":function(){
+                    $(this).css("background","red")
+                },
+                "mouseover":function(){
+                    $(this).css("background","green")
+                },
+                "mouseout":function(){
+                    $(this).css("background","blue")
+
+                }
+            })
+
+            $("#btn").click(function(){
+                $("#box").off("mouseover click")
+            })
+
+
+            // $("#box").css({'border':'1px solid red','padding':'1rem'})
+            // $("#box").on("click",function(){
+            //     $(this).css('background','red')
+            // })
+
+            // $("#box").on("mouseover mouseout",function(){
+            //     $(this).toggleClass('bgt')
+            // })
+        })
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.js"></script>
+    <title>CSS Method</title>
+</head>
+<body>
+    <h1>JQuery CSS Method</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore enim magni veniam maxime, architecto labore a laboriosam ut doloribus culpa?</p>
+        <button id="stylebutton">Add Style</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#stylebutton").click(function(){
+                // $("#box").css('background-color','red')
+                $("#box").css({'background-color':'red','color':'white','border':'10px solid black'})
+            })
+        })
+    </script>
+</body>
+</html> -->

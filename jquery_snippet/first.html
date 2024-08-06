@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./jquery.js"></script>
+    <!-- <script>
+        $(function(){
+            let c = $("#test1").html();
+            console.log("c : ",c)
+        })
+    </script> -->
+</head>
+<body>
+    <div id="test1" class="w-40 mt-5 bg-red-700 text-white p-2">
+        <span>Hello1</span>
+        <p class="yo">Loit. Distinctio, in!</p>
+    </div>
+    <div  class="w-40 mt-5 bg-green-700 text-white p-2">
+        <h1>Hello2</h1>
+        <p id="test2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vel.</p>
+    </div>
+    <div>
+        <input type="text" name="Hello1" id="hello" class="border border-black">
+    </div>
+
+    <script>
+        // mouse event,keyboard event and form event
+        $(document).ready(function(){
+
+            $("#hello").change(function(){
+                var a = $(this).val();
+                $("#test2").html(a)
+            })
+
+            $("#hello").change(function(){
+                $(this).css("color","green")
+            })
+            $("#hello").focus(function(){
+                $("#test2").css("background-color","blue")
+            })
+            $("#hello").blur(function(){
+                $("#test2").css("background-color","white")
+            })
+            $("#hello").keyup(function(){
+                $("#test2").css("background-color","white")
+            })
+            $("#hello").keydown(function(){
+                $("#test2").css("background-color","blue")
+            })
+            $("#hello").keypress(function(){
+                $("#test2").css("background-color","red")
+            })
+            $('#test1').click(function(){
+                $("#test2").css("color","yellow")
+            })
+            $('#test1').mouseenter(function(){
+                $("#test2").css("color","red")
+            })
+            $('#test1').mouseleave(function(){
+                $("#test2").css("color","blue")
+            })
+
+            $("#test2").hover(function(){
+                $("#test1").css("background-color","yellow")
+            })
+        })
+
+
+
+        // $(document).ready(function(){
+        //     $("#test2").css("background-color","yellow")
+        //     $("#test2").css("color","red")
+        //     $("*").css("border","1px solid pink")
+        //     $("#test1:first").css('color','violet')
+
+        //     // $("ul li:gt(2)").css("","")
+        // });
+
+        // other selector in jquery
+        // $("*")                          // it will select all the  tag
+        // $("ul li")                      // it will select all the li inside ul
+        // $(".abc , .xyz")                // it will select class with name abc and xyz
+        // $("p, div, h1")                 // it will select p,div and h1 tag
+        // $("p:first")                    // it will select the first pargraph tag in the html
+        // $("p:last")                     // it will select the last paragraph tag in the html
+        // $("li:even")                    // it will select all the even element in the li tag
+        // $("li:odd")                     // it will select all the odd element in the li tag
+
+        // $(document).ready(function(){
+        //     let a = $("h1").html()
+        //     console.log(a);
+
+        //     let b= $("span").html();
+        //     console.log(b)
+
+        //     let c = $("#test2").html();
+        //     console.log(c);
+
+        //     let d = $(".yo").html();
+        //     console.log(d)
+        // })
+
+        // $(function(){
+        //     let a = $("#test1").html();
+        //     console.log(a)
+        // })
+        // $(document).ready(function(){
+        //     let a = $("#test1").html();
+        //     console.log(a)
+
+        //     let b = $("#test2").html();
+        //     console.log(b)
+        // })
+
+        // $(document).ready(function(){
+        //     // alert(1);
+        //     var a = $('#test').html();
+        //     console.log(a)
+        // }); 
+        // $(function(){
+        //     var a = $('#test')
+        //     console.log(a)
+        // })
+    </script>
+</body>
+</html>

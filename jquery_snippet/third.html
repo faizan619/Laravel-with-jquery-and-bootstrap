@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.js"></script>
+    <title>Css selector</title>
+    <style>
+        .first{
+            background-color: red;
+        }
+        .second{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>JQuery Class Method</h1>
+        <div id="box">
+            <h2>Test Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aperiam pariatur beatae obcaecati dolores earum libero nostrum totam a dolor.</p>
+        </div>
+        <div>
+            <button id="addbutton">Add Class</button><button id="removebutton">Remove Class</button><button id="togglebutton">Toggle Class</button>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#addbutton").click(function(){
+                $("#box h2").addClass("first second");
+            })
+            $("#removebutton").click(function(){
+                $("#box h2").removeClass("second")
+            })
+            $("#togglebutton").click(function(){
+                $("h1").toggleClass("first")
+            })
+        })
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery.js"></script>
+    <title>Set</title>
+    <style>
+        .ba{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" style="display: flex;flex-direction:column;width: 50%;">
+        Name
+        <input type="text" name="name" id="sname">
+        <br>
+        Class
+        <input type="text" name="class" id="sclass">
+        <button type="submit" id="submitbutton">Button</button>
+    </form>
+
+    <h1>JQuery Set Method</h1>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quibusdam beatae repellat eveniet recusandae facilis repellendus, temporibus fugit corrupti earum.</p>
+    </div>
+    <br>
+    <button id="clickbutton">Set Value</button>
+    
+    <script>
+
+        $(document).ready(function(){
+            $("#sname").val('Hello Faizan')
+            $("#sclass").val("Tycs")
+        })
+        $(document).ready(function(){
+            $("#clickbutton").click(function(){
+                // $("h2").text('Change Text')
+                $("#box h2").text('<marquee>Change Text</marquee>')
+                // $("#box p").text('this is the new text that i want to use the set method')
+                $("#box p").html('<marquee>This is The CHange Text of the Paragraph</marquee>')
+                $("h1").attr('class','ba')
+            })
+        })
+    </script>
+</body>
+</html> -->

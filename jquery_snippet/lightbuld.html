@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Buld</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./jquery.js"></script>
+</head>
+<body>
+    <div id="body" class="min-h-screen flex justify-center items-center">
+        <div id="buld" class="border bg-white w-60 rounded-full h-60 border-black"></div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#body").mouseenter(function(){
+                $("#body").css('background-color','black')
+            })
+            $("#body").mouseleave(function(){
+                $("#body").css('background-color','white')
+            })
+            $("#buld").mouseenter(function(){
+                $("#buld").css("background-color","yellow")
+            })
+            $("#buld").mouseleave(function(){
+                $("#buld").css("background-color","white")
+            })
+        })
+    </script>
+</body>
+</html>
